@@ -1,4 +1,5 @@
-package com.example.personal.model.dao;
+package com.example.personal.persistence.dao;
+
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -6,9 +7,9 @@ import lombok.Data;
 import java.util.Date;
 
 @Entity
-@Table(name = "expenses")
+@Table(name = "incomes")
 @Data
-public class ExpenseDAO {
+public class IncomeDAO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
      Integer id;
@@ -17,4 +18,5 @@ public class ExpenseDAO {
      String value;
      String imageid;
      Date date;
+
 }
